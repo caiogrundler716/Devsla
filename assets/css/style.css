@@ -2,8 +2,8 @@
 
 :root {
     --header-color: black;
-    --h1-color:#393c41;
-    --h2-color:#6e7378;
+    --h1-color: #393c41;
+    --h2-color: #6e7378;
 }
 
 /* Fontes */
@@ -35,7 +35,7 @@ header {
     right: 0;
     left: 0;
     top: 0;
-    
+
 }
 
 header ul,
@@ -69,12 +69,14 @@ header .rightside ul {
 header .rightside li {
     margin: 0px 10px;
 }
-header .rightside a{
+
+header .rightside a {
     text-decoration: none;
     color: var(--header-color);
     text-transform: uppercase;
 }
-header .menu--icon{
+
+header .menu--icon {
     width: 15px;
     height: 16px;
     display: flex;
@@ -82,40 +84,59 @@ header .menu--icon{
     flex-direction: column;
     cursor: pointer;
 }
-header .menu--icon div{
+
+header .menu--icon div {
     height: 2px;
     background-color: var(--header-color);
 }
 
 /* Main */
 
-main{
+main {
     background-image: url(../images/bg.jpg);
     background-size: cover;
     background-position: center;
     height: 100vh;
-   
+
 }
-main .info{
+
+main .info {
     height: 40vh;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    
+    text-decoration: none;
+
 }
 
-main h1{
+main h1 {
     margin: 0;
     font-size: 35px;
     font-weight: normal;
     text-decoration: none;
     color: var(--h1-color)
 }
-main h2{
+
+
+
+.info a,
+.info h1{
+text-decoration: none;
+
+}
+.info h1{
+    color: var(--h1-color);
+}
+.info h2 {
+    color:var(--h2-color);
     margin: 0;
     font-size: 14px;
     font-weight: normal;
-    font-family: 'GothamBook',Arial, Helvetica, sans-serif;
+    font-family: 'GothamBook', Arial, Helvetica, sans-serif;
     color: var(--h2-color);
+    
+}
+main h2 a{
+    color: var(--h1-color);
 }
