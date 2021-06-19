@@ -2,6 +2,8 @@
 
 :root {
     --header-color: black;
+    --h1-color:#393c41;
+    --h2-color:#6e7378;
 }
 
 /* Fontes */
@@ -92,6 +94,7 @@ main{
     background-size: cover;
     background-position: center;
     height: 100vh;
+   
 }
 main .info{
     height: 40vh;
@@ -99,10 +102,20 @@ main .info{
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    
 }
+
 main h1{
     margin: 0;
     font-size: 35px;
     font-weight: normal;
     text-decoration: none;
+    color: var(--h1-color)
+}
+main h2{
+    margin: 0;
+    font-size: 14px;
+    font-weight: normal;
+    font-family: 'GothamBook',Arial, Helvetica, sans-serif;
+    color: var(--h2-color);
 }
