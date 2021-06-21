@@ -122,9 +122,13 @@ main h1 {
     color: var(--h1-color)
 }
 
+
 .info a,
 .info h1 {
     text-decoration: none;
+}
+h2 :hover{
+    text-decoration: underline;
 }
 
 .info h1 {
@@ -219,7 +223,7 @@ footer .arrow {
 
 /* Media Queries */
 
-@media (max-width : 1200px) {
+@media (max-width : 550px) {
     header .middle {
         display: none;
     }
@@ -234,7 +238,7 @@ footer .arrow {
     }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 450px) {
     footer .buttons--area {
         flex-direction: column;
         align-items: center;
