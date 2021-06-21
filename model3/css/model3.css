@@ -150,12 +150,12 @@ footer {
     bottom: 30px;
 }
 
-footer .area-boto {
+footer .area--botao {
     display: flex;
     justify-content: center;
 }
 
-footer .area-boto a {
+footer .area--botao a {
     display: block;
     width: 220px;
     text-decoration: none;
@@ -163,14 +163,45 @@ footer .area-boto a {
     font-size: 12px;
     border-radius: 30px;
     margin: 0px 10px;
+    text-align: center;
+    padding: 15px;
 }
 
-footer .button-preto {
+footer .button--preto {
     background-color: var(--btn-dark-bg);
     color: var(--btn-dark-color)
 }
 
-footer .button-branco {
+footer .button--branco {
     background-color: var(--btn-light-bg);
     color: var(--btn-light-color);
+}
+
+footer .area-arrow{
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    height: 30px;
+}
+@keyframes arrow{
+    0%{
+        margin-top: 0px;
+    }
+    50%{
+        margin-top: 15px;
+    }
+    100%{
+        margin-top: 0px;
+    }
+}
+footer .arrow{
+    animation: arrow;
+    height: 15px;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+@media (max-width: 550px){
+    header .mid {
+        display: none;
+    }
 }
